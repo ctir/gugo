@@ -1,0 +1,122 @@
+<!-- 
+    Author: Charles Tiriamai
+    Date: 2019/1/30
+    Update: 2019/2/21
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Contact us! | Gugo</title>
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/contact.css">
+</head>
+
+<body id="body">
+  <div class="page">
+    <header>
+      <aside class="profile">
+        <i id="profile-icon" class="material-icons unfinished">
+          account_circle
+        </i>
+      </aside>
+      <h1>Gugo</h1>
+      <nav id="top-nav">
+        <ul id="dropdown-container" class="dropdown" aria-haspopup="true">
+          <li>
+            <a class="focus" href="contact.html">
+              Contact Us
+              <i id="hover-arrow" class="material-icons">
+                arrow_downward
+              </i>
+            </a>
+            <ul id="dropdown-menu" class="dropdown-content">
+              <li>
+                <a class="non-focus" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="non-focus" href="topics.html">Topics</a>
+              </li>
+              <li>
+                <a class="btn unfinished" title="Our resources page is currently under construction."
+                  href="#">Resources</a>
+              </li>
+              <li>
+                <a class="non-focus" href="#">FAQ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="react-datetimer"></div>
+    <script type="text/babel" src="js/react-datetimer.js"></script>
+
+    <section class="main">
+      <h2>Contact Us!</h2>
+      <section class="form-container">
+        <form>
+          <p id="status-msg"></p>
+          <label for="name" title="This field is required">Name: (Between 1 and 12 characters) *</label>
+          <input id="name" name="name" type="text" aria-placeholder="What is your name?" placeholder="What is your name?">
+
+          <label for="message" title="This field is required">Message: (Between 1 and 40 characters) *</label>
+          <textarea id="message" name="message"
+            aria-placeholder="What do you want to tell us?"
+            placeholder="What do you want to tell us?"></textarea>
+
+          <label for="email" title="This field is required">Email: (Between 1 and 15 characters) *</label>
+          <input id="email" type="text" name="email" aria-placeholder="How may we contact you?" placeholder="How may we contact you?">
+          <p>* These fields are required</p>
+
+          <input id="contact-submit-btn" class="submit" title="Submit" type="button" value="Submit"
+            aria-placeholder="Submit"
+            onclick="getInput()">
+        </form>
+      </section>
+    </section>
+    <footer>
+      <div class="content">
+        <h1>Gugo</h1>
+        <nav>
+          <ul>
+            <li>
+              <a class="btn" title="Return to the home page" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="btn" title="View or post topics" href="topics.html">Topics</a>
+            </li>
+            <li>
+              <a class="btn unfinished" title="Our resources page is currently under construction."
+                href="#">Resources</a>
+            </li>
+            <li>
+              <a class="btn" title="View frequently asked questions" href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="contact">
+          <a id="contact" class=" focus" href="contact.html">Contact Us</a>
+        </p>
+        <div class="content">
+          <a id="privacy-statement" class="unfinished"
+            title="Our privacy statement page is currently under construction" href="#">Privacy
+            Statement</a>
+          <a id="community-rules" class="unfinished" title="Our community rules is currently under construction"
+            href="#">Community rules</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/contact-form-validation.js"></script>
+</body>
+
+</html>

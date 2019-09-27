@@ -1,0 +1,379 @@
+/* 
+    Author: Charles Tiriamai
+    Date: 2019/1/30
+    Update: 2019/2/5
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #77a9c0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #77a9c0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #666;
+}
+
+.focus {
+    color: #77DDEE
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.non-focus {
+    color: #fff;
+    font-weight: 300;
+}
+
+.focus {
+    color: #77DDEE;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+.page {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    padding-bottom: 300px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'profile title top-nav' 'dateTimer dateTimer dateTimer';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 5em;
+    background-color: rgba(119, 169, 192, 1);
+    color: #fff;
+}
+
+.profile {
+    grid-area: profile;
+    padding-top: 0.7em;
+    padding-left: 0.7em;
+    text-align: left;
+}
+
+.profile i {
+    font-size: 3.5em;
+}
+
+header h1 {
+    grid-area: title;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    margin: 15px -15px 15px 0px;
+    list-style: none;
+}
+
+#top-nav {
+    position: absolute;
+    right: 20px;
+}
+
+.dropdown {
+    top: 5px;
+    margin: 0;
+    margin-top: 15%;
+    width: 100px;
+    background-color: #666;
+    text-align: center;
+    position: relative;
+}
+
+.dropdown a {
+    display: block;
+    height: 100%;
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid #77a9c0;
+    color: #77a9c0;
+    padding: 10px;
+    margin: 0;
+}
+
+.dropdown a:hover {
+    color: #666;
+}
+
+.dropdown .focus {
+    color: #7DE;
+}
+
+.dropdown li {
+    padding: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown i {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.dropdown-content {
+    z-index: 2;
+    display: none;
+    transition: display 6s;
+    position: absolute;
+    left: 0px;
+    margin-top: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+section.main {
+    margin: 4%;
+    margin-top: 120px;
+    position: relative;
+}
+
+.main h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #1F7A8C;
+    margin-bottom: 1.3em;
+}
+
+.link-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+
+.main i {
+    font-size: 4em;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+}
+
+article {
+    box-shadow: 3px 3px;
+    width: 80%;
+    height: 17em;
+    transition: 0.2s;
+    text-align: center;
+    border: 1px solid #77a9c0;
+    background-color: rgba(125, 240, 255, 0.2);
+    margin: 0em auto;
+}
+
+article:hover {
+    border-color: #666;
+    box-shadow: 0px 0px #666;
+}
+
+section.main a {
+    display: block;
+    height: 100%;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+.content p {
+    margin: 1em auto;
+    max-width: 15em;
+}
+
+footer {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    padding-bottom: 30px;
+    color: #fff;
+    background-color: #77a9c0;
+    text-align: center;
+}
+
+footer h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer ul {
+    background-color: #77a9c0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    margin: 0;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer div.content {
+    padding-top: 30px;
+}
+
+footer div.content a {
+    margin: 2%;
+}
+
+footer p.contact {
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer div#bottom-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    white-space: nowrap;
+}
+
+#community-rules {
+    white-space: nowrap;
+}
+
+@media screen and (min-width:650px) {
+    .dropdown {
+        top: 2px;
+        width: 125px;
+    }
+    .dropdown-content {
+        width: 125px;
+    }
+    section.main article {
+        width: 100%;
+        position: relative;
+    }
+    section.main div {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    section.main div.title-container {
+        border-right: 1px solid #1F7A8C;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30%;
+        height: 85%;
+        margin: 20px;
+        padding-right: 40px;
+    }
+    .main i.material-icons {
+        margin: 60px auto 0 auto;
+        text-align: center;
+    }
+    .main .content {
+        text-align: left;
+        position: absolute;
+        top: 65px;
+    }
+    .content p {
+        padding: 0 0 0 40px;
+        line-height: 30px;
+    }
+    footer div#bottom-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 17px;
+    }
+    .content {
+        left: 50%;
+        top: 85px;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .content p {
+        max-width: 20em;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .content p {
+        max-width: 22em;
+    }
+}
+
+@media screen and (min-width:1330px) {
+    body {
+        font-size: 18px;
+    }
+    section.link-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section.main article {
+        display: block;
+        max-width: 530px;
+        width: 100%;
+        height: 350px;
+    }
+    section.main div {
+        margin: 0;
+        padding: 0;
+        width: 350px;
+    }
+    section.main div.title-container {
+        position: static;
+        border-right: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        height: 30%;
+    }
+    section.main i {
+        margin-top: 5px;
+    }
+    section.main div.content {
+        position: static;
+        text-align: center;
+        line-height: 25px;
+        width: 400px;
+        height: 30%;
+    }
+    section.main div.content p {
+        padding: 20px 20px;
+        max-width: 530px;
+    }
+}

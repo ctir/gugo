@@ -1,0 +1,144 @@
+<!-- 
+    Author: Charles Tiriamai
+    Date: 2019/1/30
+    Update: 2019/2/5
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to the Home page! | Gugo</title>
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <aside class="profile">
+        <i id="profile-icon" class="material-icons unfinished">
+          account_circle
+        </i>
+      </aside>
+      <h1>Gugo</h1>
+      <nav id="top-nav">
+        <ul id="dropdown-container" class="dropdown" aria-haspopup="true">
+          <li>
+            <a class="focus" href="index.html">
+              Home
+              <i id="hover-arrow" class="material-icons">
+                arrow_downward
+              </i>
+            </a>
+            <ul id="dropdown-menu" class="dropdown-content">
+              <li>
+                <a class="non-focus" href="topics.html">
+                  Topics
+                </a>
+              </li>
+              <li>
+                <a class="btn unfinished" title="Our resources page is currently under construction."
+                  href="#">Resources</a>
+              </li>
+              <li>
+                <a class="non-focus" href="#">FAQ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="react-datetimer"></div>
+    <script type="text/babel" src="js/react-datetimer.js"></script>
+
+    <section class="main">
+      <h2>Welcome!</h2>
+      <section class="link-container">
+        <article class="summary" id="topics-summary">
+          <a id="topics" class="summary-link" title="View or post topics" href="topics.html">
+            <div class="title-container">
+              <i class="material-icons">
+                question_answer
+              </i>
+              <h3 id="">Topics</h3>
+            </div>
+            <div class="content">
+              <p>Click here to view all the topics posted by our
+                community or to post some of your own.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="summary" id="resources">
+          <a class="summary-link" title="View useful external resources" href="#">
+            <div class="title-container">
+              <i class="material-icons">
+                folder
+              </i>
+              <h3>Resources</h3>
+            </div>
+            <div class="content">
+              <p>View all external resources our community has found helpful.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="summary" id="faq">
+          <a class="summary-link" title="View frequently asked questions" href="#">
+            <div class="title-container">
+              <i class="material-icons">
+                help
+              </i>
+              <h3>Frequently Asked Questions</h3>
+            </div>
+            <div class="content">
+              <p>View questions frequently asked by the community.</p>
+            </div>
+          </a>
+        </article>
+      </section>
+    </section>
+
+    <footer>
+      <div class="content">
+        <h1>Gugo</h1>
+        <nav>
+          <ul>
+            <li>
+              <a class="btn focus" title="Return to the home page" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="btn" title="View or post topics" href="topics.html">Topics</a>
+            </li>
+            <li>
+              <a class="btn unfinished" title="Our resources page is currently under construction."
+                href="#">Resources</a>
+            </li>
+            <li>
+              <a class="btn" title="View frequently asked questions" href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="contact">
+          <a id="contact" class="" href="contact.html">Contact Us</a>
+        </p>
+        <div class="content">
+          <a id="privacy-statement" class="unfinished"
+            title="Our privacy statement page is currently under construction" href="#">Privacy Statement</a>
+          <a id="community-rules" class="unfinished" title="Our community rules is currently under construction"
+            href="#">Community rules</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
